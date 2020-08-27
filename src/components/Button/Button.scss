@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../../fonts/KeepCalm-Medium.ttf) format('truetype');
+}
+
+.sleek-button{
+    color: #fff;
+    text-transform: uppercase;
+    border: 2px solid #03a9f4;
+    text-decoration: none;
+    background:#03a9f4;
+    font-family: 'Open sans';
+    border-radius: 25px;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+    margin: 5px;
+    &.large{
+        padding: 15px 30px 13px 30px;
+        font-size: 17px;
+    }
+    &.medium{
+        padding: 15px 25px 12px 25px;
+        font-size: 15px;
+    }
+    &.small{
+        padding: 11px 22px 8px 22px;
+        font-size: 13px;
+    }
+    &.very-small{
+        padding: 8px 18px 7px 18px;
+        font-size: 12px;
+    }
+    &:hover{
+        background: #005ea6;
+        border: 2px solid #005ea6;
+        cursor: pointer;
+    }
+    &:disabled{
+        background: lightblue ;
+        border: 2px solid lightblue;
+        &:hover{
+            background: lightblue ;
+            border: 2px solid lightblue;
+            cursor: not-allowed;
+        }
+    }
+    &.secondary{
+        border: 2px solid #03a9f4;
+        color: #03a9f4;
+        background: white;
+        &:hover{
+            color: #005ea6;
+            border: 2px solid #005ea6;
+            cursor: pointer;
+        }
+        &:disabled{
+            color: lightblue ;
+            border: 2px solid lightblue;
+            &:hover{
+                color: lightblue ;
+                border: 2px solid lightblue;
+                cursor: not-allowed;
+                background: white;
+            }
+        }
+    }
+}
+
